@@ -1,0 +1,28 @@
+.bg-satu {
+  background-color: white;
+}
+
+.bg-dua {
+  background-color: rgb(125, 223, 255);
+}
+
+.bg-tiga {
+  background-color: navy;
+}
+
+.header-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.kategori-img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0, 1);
+  transition: 0.35s;
+}
+
+.kategori-img:hover {
+  transform: scale(1.05);
+}

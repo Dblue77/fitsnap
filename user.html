@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FitSnap - User</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top bg-primary">
+      <div class="container">
+        <a class="navbar-brand text-white fw-bold" href="dashboard.html">
+          FitSnap
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link text-white" href="dashboard.html">Beranda</a>
+            <a class="nav-link text-white" href="#profil">Profil</a>
+            <a class="nav-link text-white" href="#cek-bmi">Cek BMI</a>
+            <a class="nav-link text-white" href="riwayat.html"
+              >Riwayat Cek kesehatan</a
+            >
+            <a class="nav-link text-white" href="login.html" onclick="logout()"
+              >Logout</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="bg-satu" id="profil">
+      <div class="container py-3">
+        <h2 class="text-start pt-3" id="welcome"></h2>
+        <p class="pb-3" style="text-align: center">
+          Hallo Selamat datang, disini kamu bisa menghitung Body Mass Index
+          (BMI) adalah cara menghitung badan ideal berdasarkan tinggi dan berat
+          badan. Dan bisa ketahuan apakah kamu masuk ke kategori mana
+        </p>
+      </div>
+    </section>
+
+    <section class="bg-dua" id="cek-bmi">
+      <div class="container py-3">
+        <div class="row align-items-center">
+          <div class="col-md-7">
+            <h2 class="text-start fw-bold">BMI Kalkulator</h2>
+            <p class="text-start">
+              Berat badan ideal adalah impian semua orang. Tidak hanya memiliki
+              bentuk tubuh yang menunjang penampilkan, berat badan ideal juga
+              menandakan kondisi tubuh yang sehat. Bagaimana denganmu? Yuk,
+              hitung sekarang di BMI Kalkulator
+            </p>
+          </div>
+          <div class="col-md-5">
+            <div class="card p-4 rounded-4 border-0">
+              <h3 class="text-start pb-2">Yuk Mulai Hitung BMI</h3>
+
+              <form onsubmit="hitungBMI(event)">
+                <div class="text-start mb-3">
+                  <label class="fw-bold">Tinggi Badan (Cm)</label>
+                  <input
+                    class="form-control rounded-3"
+                    type="number" min="0"
+                    id="tinggi"
+                    placeholder="Masukkan Tinggi Badan"
+                  />
+                </div>
+
+                <div class="text-start mb-3">
+                  <label class="fw-bold">Berat Badan (Kg)</label>
+                  <input
+                    class="form-control rounded-3"
+                    type="number" min="0"
+                    id="berat"
+                    placeholder="Masukkan Berat Badan"
+                  />
+                </div>
+                <div class="text-center mt-2">
+                    <button class="btn btn-primary w-100">Hitung BMI</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <section class="bg-satu" id="kategori-bmi">
+      <div class="container py-3">
+        <div class="row g-4">
+          <h2 class="text-center fw-bold mb-4 pt-5">Kategori BMI</h2>
+          <div class="col-md-6 my-2">
+            <img
+              class="img-fluid kategori-img"
+              src="assets/image/kurus.png"
+              alt="kurus"
+            />
+          </div>
+          <div class="col-md-6 my-2">
+            <img
+              class="img-fluid kategori-img"
+              src="assets/image/normal.png"
+              alt="normal"
+            />
+          </div>
+          <div class="col-md-6 my-2">
+            <img
+              class="img-fluid kategori-img"
+              src="assets/image/overwight.png"
+              alt="berlebih"
+            />
+          </div>
+          <div class="col-md-6 my-2">
+            <img
+              class="img-fluid kategori-img"
+              src="assets/image/obesitas.png"
+              alt="obesitas"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-white bg-dark py-3">
+      <div class="container">
+        <p class="text-center">&copy; UKK 2026 - FitSnap</p>
+        <p class="text-center">SMK Dinamika Pembangunan 2 Jakarta</p>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/bmi.js"></script>
+    <script src="assets/js/logout.js"></script>
+  </body>
+</html>
