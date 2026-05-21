@@ -102,30 +102,40 @@
           <p><b>No Telepon : </b>(021) 555-8899</p>
         </div>
 
-        <form action="https://formspree.io/f/mpqnbra" method="post">
-          <div class="col-md-7">
-            <div class="card p-4 rounded-4 border-0">
-              <textarea id="massage" class="form-control rounded-4 mb-3" placeholder="Enter Massage"
+
+        <div class="col-md-7">
+          <div class="card p-4 rounded-4 border-0">
+            <form action="https://formspree.io/f/mpqnpbra" method="POST">
+
+              <textarea name="message" id="message" class="form-control rounded-4 mb-3" placeholder="Enter Message"
                 rows="5"></textarea>
 
               <div class="row">
-                <div class="col-md-6 mb-3">
-                  <input id="name" type="text" placeholder="Enter Your Name" class="form-control rounded-1" />
-                </div>
-                <div class="col-md-6 mb-3">
-                  <input id="email" type="email" placeholder="Enter Your Email" class="form-control rounded-1" />
-                </div>
-                <div class="text-center mt-1">
-                  <button type="submit" class="btn btn-primary w-100">
-                    Send Massage
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </form>
 
+                <div class="col-md-6 mb-3">
+                  <input name="name" id="name" type="text" placeholder="Enter Your Name"
+                    class="form-control rounded-1" />
+                </div>
+
+                <div class="col-md-6 mb-3">
+                  <input name="email" id="email" type="email" placeholder="Enter Your Email"
+                    class="form-control rounded-1" />
+                </div>
+
+              </div>
+
+              <div class="text-center mt-1">
+                <button type="submit" class="btn btn-primary w-100">
+                  Send Message
+                </button>
+              </div>
+
+            </form>
+          </div>
+        </div>
       </div>
+    </div>
+    </div>
     </div>
   </section>
 
